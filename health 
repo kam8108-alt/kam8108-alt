@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="importmap">
+  {
+    "imports": {
+      "canvas-confetti": "https://cdn.skypack.dev/canvas-confetti",
+      "lodash": "https://esm.sh/lodash-es@4.17.21"
+    }
+  }
+  </script>
+</head>
+<body>
+  <h1>Hello Modern JS</h1>
+
+  <script type="module">
+    import confetti from 'canvas-confetti';
+    import { chunk } from 'lodash';
+
+    console.log("Chunked Array:", chunk([1, 2, 3, 4], 2));
+    
+    // Trigger confetti
+    confetti();
+  </script>
+</body>
+</html>
